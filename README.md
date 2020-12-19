@@ -1,6 +1,6 @@
 # Micro-Frontend-Init
 
-A very basci structure on how Micro-Frontends are implemented. This implementation is one amoung many others.
+A very bascic structure on how Micro-Frontends are implemented. This implementation is one amoung many others.
 Each implementation way has its Pros and Cons.
 
 Here I am using Run time Integration.
