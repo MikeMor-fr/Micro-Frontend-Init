@@ -1,9 +1,9 @@
 import faker from "faker";
 
-const mountCart = (element) => {
+const mountCart = (element: HTMLElement): void => {
   console.log("cart !!");
 
-  const cartText = `<div>You have ${faker.random.number()} items in your cart</div>`;
+  const cartText: string = `<div>You have ${faker.random.number()} items in your cart</div>`;
 
   element.innerHTML = cartText;
 };
@@ -11,7 +11,7 @@ const mountCart = (element) => {
 // Context 1 -> running in development isolation
 // We are using our local html file
 if (process.env.NODE_ENV === "development") {
-  const element = document.querySelector("#dev-cart-dev-isolation");
+  const element: HTMLElement = document.querySelector("#dev-cart-dev-isolation");
 
   // Assuming our container doesn't have an element
   // with id=dev-products-dev-isolation

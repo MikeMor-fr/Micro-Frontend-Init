@@ -1,10 +1,10 @@
 import faker from "faker";
 
-const mountProducts = (element) => {
-  let products = "";
+const mountProducts = (element: HTMLElement): void => {
+  let products: string = "";
 
   for (let i = 0; i < 6; i++) {
-    const name = faker.commerce.productName();
+    const name: string = faker.commerce.productName();
     products += `<div>${name}</div>`;
   }
 
@@ -16,7 +16,7 @@ const mountProducts = (element) => {
 // Context 1 -> running in development isolation
 // We are using our local html file
 if (process.env.NODE_ENV === "development") {
-  const element = document.querySelector("#dev-products-dev-isolation");
+  const element: HTMLElement = document.querySelector("#dev-products-dev-isolation");
 
   // Assuming our container doesn't have an element
   // with id=dev-products-dev-isolation
