@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === "development") {
   // with id=dev-products-dev-isolation
   if (element) {
     // We are probably runninng in isolation
-    mount(element);
+    mountProducts(element);
   }
 }
 
